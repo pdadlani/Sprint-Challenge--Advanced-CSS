@@ -3,4 +3,41 @@
 .nav-main {
   width: 100%;
   background-color: #f6f6f6;
+
+  .nav-home {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    .navFlex();
+    padding: @padding-big;
+
+    h1 {
+      font-size: 4rem;
+      padding: 13px;
+    }
+
+    .home-links {
+    //margin-left: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @padding-small;
+
+      //@media @mobile {
+        //font-size: 1.6 rem;
+      //}
+    
+
+      a {
+        margin: 0 (2*@padding-big);
+        text-decoration: none;
+        color: black;
+      }
+
+      .first-anchor {
+        margin-left: 0;
+      }
+    }
+  }
 }

@@ -1,1 +1,21 @@
 // Mixins Here
+
+//Flex
+.navFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 5px, @padding-big: auto) {
+
+  font-size: 2rem;
+  color: @btnColor;
+  background-color: @btnBackgroundColor;
+  padding: @padding-small @padding-big;
+
+  &:hover {
+    background-color: lighten(@btnBackgroundColor, 20%);
+  }
+
+}
