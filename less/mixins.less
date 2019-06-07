@@ -1,1 +1,30 @@
 // Mixins Here
+
+//Flex
+.navFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-reverse {
+  flex-direction: column-reverse;
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 5px, @padding-big: auto) {
+  font-size: 2rem;
+  color: @btnColor;
+  background-color: @btnBackgroundColor;
+  padding: @padding-small @padding-big;
+
+  &:hover {
+    color: @btnBackgroundColor;
+    background-color: @btnColor;
+  }
+
+}
+

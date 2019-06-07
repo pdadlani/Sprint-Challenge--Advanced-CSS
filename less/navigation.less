@@ -1,1 +1,42 @@
 // Navigation code here
+
+.nav-main {
+  width: 100%;
+  background-color: @wild-sand;
+
+
+  .nav-home {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    .navFlex();
+    padding: @padding-big;
+
+
+    h1 {
+      font-size: @headerFontSize;
+      padding: 13px;
+    }
+
+    .home-links {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @padding-small;
+    
+      a {
+        margin: 0 (2*@padding-big);
+        text-decoration: none;
+        color: black;
+        
+        &:hover {
+          color: @porcelain;
+          background-color: @river-bend;
+          .border-radius(@radius);
+          padding: @padding-big;
+        }
+      }
+    }
+  }
+}
