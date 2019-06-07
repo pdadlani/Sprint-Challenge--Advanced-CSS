@@ -2,8 +2,7 @@
 
 .nav-main {
   width: 100%;
-  background-color: #f6f6f6;
-
+  background-color: @wild-sand;
 
 
   .nav-home {
@@ -13,32 +12,30 @@
     .navFlex();
     padding: @padding-big;
 
+
     h1 {
-      font-size: 4rem;
+      font-size: @headerFontSize;
       padding: 13px;
     }
 
     .home-links {
-    //margin-left: 20px;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: @padding-small;
-
-      //@media @mobile {
-        //font-size: 1.6 rem;
-      //}
     
-
       a {
         margin: 0 (2*@padding-big);
         text-decoration: none;
         color: black;
-      }
-
-      .first-anchor {
-        margin-left: 0;
+        
+        &:hover {
+          color: @porcelain;
+          background-color: @river-bend;
+          .border-radius(@radius);
+          padding: @padding-big;
+        }
       }
     }
   }

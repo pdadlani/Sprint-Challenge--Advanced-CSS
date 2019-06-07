@@ -7,12 +7,15 @@
   align-items: center;
 }
 
+.c-reverse {
+  flex-direction: column-reverse;
+}
+
 .border-radius(@radius) {
   border-radius: @radius;
 }
 
 .btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 5px, @padding-big: auto) {
-  .border-radius(@radius);
   font-size: 2rem;
   color: @btnColor;
   background-color: @btnBackgroundColor;

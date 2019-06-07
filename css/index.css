@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
 }
+.c-reverse {
+  flex-direction: column-reverse;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,7 +170,7 @@ p {
 }
 .nav-main {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 .nav-main .nav-home {
   max-width: 800px;
@@ -194,8 +197,11 @@ p {
   text-decoration: none;
   color: black;
 }
-.nav-main .nav-home .home-links .first-anchor {
-  margin-left: 0;
+.nav-main .nav-home .home-links a:hover {
+  color: #F6F7F8;
+  background-color: #454A59;
+  border-radius: 5px;
+  padding: 10px;
 }
 footer {
   color: #22283B;
@@ -278,11 +284,11 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border-radius: 5px;
   font-size: 2rem;
   color: white;
   background-color: #22283A;
   padding: 5px 15px;
+  border-radius: 5px;
 }
 .home .walk .walk-text .btn:hover {
   color: #22283A;
@@ -290,7 +296,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    border-radius: 5px;
     font-size: 2rem;
     color: white;
     background-color: #22283A;
@@ -315,4 +320,15 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.container-contact h4 {
+  font-size: 4rem;
+  padding: 20px;
 }
