@@ -7,15 +7,21 @@
   align-items: center;
 }
 
-.btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 5px, @padding-big: auto) {
+.border-radius(@radius) {
+  border-radius: @radius;
+}
 
+.btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 5px, @padding-big: auto) {
+  .border-radius(@radius);
   font-size: 2rem;
   color: @btnColor;
   background-color: @btnBackgroundColor;
   padding: @padding-small @padding-big;
 
   &:hover {
-    background-color: lighten(@btnBackgroundColor, 20%);
+    color: @btnBackgroundColor;
+    background-color: @btnColor;
   }
 
 }
+
